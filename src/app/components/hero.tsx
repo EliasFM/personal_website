@@ -30,7 +30,7 @@ const Hero = () => {
           <p className="mb-5 text-2xl">
             Software Engineer. Data Enthusiast. Photographer.
           </p>
-          <a href="{{ MEDIA_URL }}Resume_Elias_Mendel_Software_Engineer.pdf" className="btn btn-primary"
+          <a href="/data/Resume_Elias_Mendel_Software_Engineer.pdf" className="btn btn-primary"
               download>Download My Resume</a>
         </div>
       </div>
