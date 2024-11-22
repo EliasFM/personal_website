@@ -3,16 +3,16 @@ import { useState } from "react";
 const Hero = () => {
   // Define state for background image
   const [background, setBackground] = useState(
-    "/static/assets/SouthAfricanFevertree.jpg"
+    "/assets/SouthAfricanFevertree.jpg"
   );
 
   // Background options
   const backgrounds = {
-    Fevertree: "/static/assets/SouthAfricanFevertree.jpg",
-    Elephant: "/static/assets/DustSprayedElephant.jpg",
-    Dusk: "/static/assets/BWLightRays.jpg",
-    HDR: "/static/assets/HDR_Elephant.jpg",
-    Lioness: "/static/assets/Lioness_Valley.jpg",
+    Fevertree: "/assets/SouthAfricanFevertree.jpg",
+    Elephant: "/assets/DustSprayedElephant.jpg",
+    Dusk: "/assets/BWLightRays.jpg",
+    HDR: "/assets/HDR_Elephant.jpg",
+    Lioness: "/assets/Lioness_Valley.jpg",
   };
 
   return (
