@@ -20,7 +20,7 @@ const Hero = () => {
     <div
       className="hero min-h-screen relative transition-all duration-500"
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: `${background}`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
