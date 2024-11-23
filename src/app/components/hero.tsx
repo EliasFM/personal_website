@@ -3,7 +3,7 @@ import { useState } from "react";
 const Hero = () => {
   // Define state for background image
   const [background, setBackground] = useState(
-    "./assets/SouthAfricanFevertree.jpg"
+    "./LionessValley.JPEG"
   );
 
   // Background options
@@ -12,7 +12,7 @@ const Hero = () => {
     Elephant: "./assets/DustSprayedElephant.jpg",
     Dusk: "./assets/BWLightRays.jpg",
     HDR: "./assets/HDRElephant.jpg",
-    Lioness: "./LionessValley.jpg",
+    Lioness: "./LionessValley.JPEG",
   };
 
   return (
