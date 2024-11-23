@@ -72,7 +72,7 @@ export default function Home() {
     <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
       <a href="https://www.github.com/EliasFM" className="hover:opacity-75">
         <img
-          src="./assets/logos/github-mark-white.svg"
+          src="./logos/github-mark-white.svg"
           alt="GitHub"
           className="h-6 w-6"
         />
@@ -82,14 +82,14 @@ export default function Home() {
         className="hover:opacity-75"
       >
         <img
-          src="./assets/logos/LI-In-Bug.png"
+          src="./logos/LI-In-Bug.png"
           alt="LinkedIn"
           className="h-6 w-7"
         />
       </a>
       <a href="mailto:elias.mendel@gmail.com" className="hover:opacity-75">
         <img
-          src="./assets/logos/gmail-logo.png"
+          src="./logos/gmail-logo.png"
           alt="Gmail"
           className="h-6 w-6"
         />

@@ -12,7 +12,7 @@ const Hero = () => {
     Elephant: "./assets/DustSprayedElephant.jpg",
     Dusk: "./assets/BWLightRays.jpg",
     HDR: "./assets/HDRElephant.jpg",
-    Lioness: "./assets/LionessValley.jpg",
+    Lioness: "./LionessValley.jpg",
   };
 
   return (
