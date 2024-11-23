@@ -9,6 +9,7 @@ const nextConfig = {
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
   // basePath: "/personal-website",
+  images: { unoptimized: true } 
 };
 
 export default nextConfig;

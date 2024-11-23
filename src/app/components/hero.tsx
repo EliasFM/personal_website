@@ -1,27 +1,36 @@
 import { useState } from "react";
+import Image from "next/image";
 
 const Hero = () => {
   // Define state for background image
   const [background, setBackground] = useState(
-    "./LionessValley.JPEG"
+    "./assets/LionessValley.jpg"
   );
 
   // Background options
-  const backgrounds = {
-    Fevertree: "./assets/SouthAfricanFevertree.jpg",
-    Elephant: "./assets/DustSprayedElephant.jpg",
-    Dusk: "./assets/BWLightRays.jpg",
-    HDR: "./assets/HDRElephant.jpg",
-    Lioness: "./LionessValley.JPEG",
-  };
+  const backgrounds = [
+    { name: "Fevertree_Sunrise", src: "./assets/SouthAfricanFevertree.jpg" },
+    { name: "Dusty_Elephant", src: "./assets/DustSprayedElephant.jpg" },
+    { name: "Dusk", src: "./assets/BWLightRays.jpg" },
+    { name: "HDR_Elephant", src: "./assets/HDRElephant.jpg" },
+    { name: "Lioness_Valley", src: "./assets/LionessValley.jpg" },
+  ];
 
   return (
     <div>
+      {/* Preload All Images */}
+      {backgrounds.map((bg, index) => (
+        <div key={index} className="hidden">
+          <Image src={bg.src} alt={bg.name} layout="fill" priority />
+        </div>
+      ))}
     <div
       className="hero min-h-screen relative transition-all duration-500"
+      
       style={{
-        backgroundImage: `${background}`,
+        backgroundImage: `url(${background})`,
       }}
+      
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
@@ -43,46 +52,16 @@ const Hero = () => {
           tabIndex={0}
           className="menu dropdown-content bg-base-100 rounded-box shadow"
         >
-          <li>
-          <button
-            onClick={() => setBackground(backgrounds.Fevertree)}
-            className="btn btn-ghost"
-          >
-            Fevertree Sunrise
-          </button>
-          </li>
-          <li>
-          <button
-            onClick={() => setBackground(backgrounds.Elephant)}
-            className="btn btn-ghost ml-2"
-          >
-            Elephant Approaching
-          </button>
-          </li>
-          <li>
-          <button
-            onClick={() => setBackground(backgrounds.Dusk)}
-            className="btn btn-ghost ml-2"
-          >
-            Dusk
-          </button>
-          </li>
-          <li>
-          <button
-            onClick={() => setBackground(backgrounds.HDR)}
-            className="btn btn-ghost ml-2"
-          >
-            HDR Elephant
-          </button>
-          </li>
-          <li>
-          <button
-            onClick={() => setBackground(backgrounds.Lioness)}
-            className="btn btn-ghost ml-2"
-          >
-            Wandering Lioness
-          </button>
-          </li>
+           {backgrounds.map((bg, index) => (
+            <li key={index}>
+              <button
+                onClick={() => setBackground(bg.src)}
+                className="btn btn-ghost text-left"
+              >
+                {bg.name}
+              </button>
+            </li>
+            ))}
         </ul>
       </div>
       </div>

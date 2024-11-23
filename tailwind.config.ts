@@ -12,6 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+          Fevertree: "url(./assets/SouthAfricanFevertree.jpg)",
+          Elephant: "url(./assets/DustSprayedElephant.jpg)",
+          Dusk: "url(./assets/BWLightRays.jpg)",
+          HDR: "url(./assets/HDRElephant.jpg)",
+          Lioness: "url(./LionessValley.jpg)",
+      },
     },
   },
   plugins: [],
