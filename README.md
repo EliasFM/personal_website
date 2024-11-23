@@ -1,6 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Elias Mendel's Portfolio Website**
 
-## Getting Started
+Welcome to the repository for my portfolio website! This site showcases my projects, skills, and professional experience as a Software Engineer. As well as showcasing some of my photography.
+
+---
+
+## **Table of Contents**
+
+- [About the Website](#about-the-website)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup Instructions](#setup-instructions)
+- [License](#license)
+
+---
+
+## **About the Website**
+
+This portfolio website serves as a hub to highlight:
+
+- My personal and professional journey.
+- Selected projects showcasing my technical skills.
+- A collection of my photography work.
+- A downloadable resume for potential collaborators or employers.
+
+Visit the live site here: [Elias Mendel Portfolio](https://eliasmendel.com)
+
+---
+
+## **Features**
+
+- **Responsive Design**: Optimized for all devices.
+- **Hero Section**: A visually striking introduction with a resume download button.
+- **Projects Carousel**: Interactive carousel showcasing key projects.
+- **Photography Gallery**: A section dedicated to my photography portfolio.
+- **Dynamic Content**: Powered by Django templates for scalable and reusable components.
+
+---
+
+## **Tech Stack**
+
+### **Frontend**
+- [Tailwind CSS](https://tailwindcss.com): Utility-first CSS framework.
+- [DaisyUI](https://daisyui.com): Components for quick and clean UI development.
+- Next.js and React
+
+### **Deployment**
+- Github Pages
+
+---
+
+## **Setup Instructions**
+
+Follow these steps to run the website locally:
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/eliasmendel/Elias_Website.git
+cd Elias_Website
+```
 
 First, run the development server:
 
@@ -16,21 +73,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+All photos in this project are Copyright 2024 Elias Mendel and used by permission for this project only.
 
-To learn more about Next.js, take a look at the following resources:
+Any other file of this project is available under the MIT license as follow: 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Copyright 2024 Elias Mendel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Deploy on Vercel
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
