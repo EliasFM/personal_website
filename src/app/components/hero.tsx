@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 
 const Hero = () => {
   // Define state for background image
