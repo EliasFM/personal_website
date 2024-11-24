@@ -9,29 +9,24 @@ const Hero = () => {
 
   // Background options
   const backgrounds = [
+    { name: "Lioness_Valley", src: "./assets/LionessValley.jpg" },
     { name: "Fevertree_Sunrise", src: "./assets/SouthAfricanFevertree.jpg" },
     { name: "Dusty_Elephant", src: "./assets/DustSprayedElephant.jpg" },
     { name: "Dusk", src: "./assets/BWLightRays.jpg" },
     { name: "HDR_Elephant", src: "./assets/HDRElephant.jpg" },
-    { name: "Lioness_Valley", src: "./assets/LionessValley.jpg" },
   ];
 
   return (
     <div>
-      {/* Preload All Images */}
-      {backgrounds.map((bg, index) => (
-        <div key={index} className="hidden">
-          <Image src={bg.src} alt={bg.name} layout="fill" priority />
-        </div>
-      ))}
+      
     <div
       className="hero min-h-screen relative transition-all duration-500"
-      
       style={{
         backgroundImage: `url(${background})`,
       }}
-      
     >
+      
+      {/* Hero Overlay */}
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md">
@@ -44,6 +39,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    {/* Background Photo Dropdown */}
     <div className="dropdown dropdown-top">
         <label tabIndex={0} className="btn btn-primary">
           Change Background (A Selection of My Photography)
