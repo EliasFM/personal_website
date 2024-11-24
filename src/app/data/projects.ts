@@ -1,19 +1,19 @@
 
 const projects = [
     {
-      title: "Personal Portfolio (Hosted)",
-      description:
-        "Personal Portfolio Website, a separate hosted site. Built using Django and Tailwind/DaisyUI. Hosted on fly.io.",
-      github: "https://github.com/EliasFM/Elias_Website",
-      link: "https://elias-portfolio.fly.dev/",
-    },
-    {
-        title: "Personal Portfolio (Hosted)",
+        title: "Personal Portfolio (Next.js on GH-Pages)",
         description:
           "Personal Portfolio Website, this very site. Built using Next.js and Tailwind/DaisyUI. Hosted on GH-Pages.",
         github: "https://github.com/EliasFM/personal_website",
-        link: "https://eliasfm.github.io/personal_website/",
+        link: "https://www.eliasmendel.com",
       },
+    {
+      title: "Portfolio Website (Django on Fly.io)",
+      description:
+        "An outdated Portfolio Website, a separate hosted site. Built using Django and Tailwind/DaisyUI. Hosted on fly.io.",
+      github: "https://github.com/EliasFM/Elias_Website",
+      link: "https://elias-portfolio.fly.dev/",
+    },
     {
       title: "Muse N' News",
       description:

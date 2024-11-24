@@ -518,6 +518,7 @@ Make sure disabled buttons don't get the pointer cursor.
   cursor: default;
 }
 
+
 /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
@@ -548,11 +549,6 @@ video {
   height: auto;
 }
 
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
-[hidden]:where(:not([hidden="until-found"])) {
-  display: none;
-}
 
 :root,
 [data-theme] {
@@ -622,6 +618,12 @@ html {
 
 *:hover {
   scrollbar-color: color-mix(in oklch, currentColor 60%, transparent) transparent;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
 }
 
 :root {
@@ -1771,6 +1773,10 @@ html {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -1973,4 +1979,12 @@ html {
   .lg\:flex-none {
     flex: none;
   }
+}
+@media (prefers-color-scheme: dark) {
+  .dark\:block {
+      display: block;
+  }
+  .dark\:hidden {
+    display: none;
+}
 }

@@ -65,7 +65,7 @@ export default function Home() {
     </div>
   </section>
   {/* Footer */}
-  <footer className="footer bg-base-300 bg-opacity-100 text-neutral-content items-center p-4">
+  <footer className="footer bg-base-300 bg-opacity-100 dark:text-neutral-content items-center p-4">
     <aside className="grid-flow-col items-center">
       <p>© 2024 Elias Mendel. All rights reserved.</p>
     </aside>
@@ -74,7 +74,12 @@ export default function Home() {
         <img
           src="./logos/github-mark-white.svg"
           alt="GitHub"
-          className="h-6 w-6"
+          className="h-6 w-6 hidden dark:block"
+        />
+        <img
+          src="./logos/github-mark.svg"
+          alt="GitHub"
+          className="h-6 w-6 dark:hidden"
         />
       </a>
       <a
